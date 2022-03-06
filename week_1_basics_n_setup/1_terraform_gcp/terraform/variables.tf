@@ -3,7 +3,7 @@ locals {
 }
 
 variable "project" {
-  description = "Your GCP Project ID"
+  description = "Your GCP Project ID" # dtc-de-drdorama
 }
 
 variable "region" {
@@ -22,3 +22,9 @@ variable "BQ_DATASET" {
   type = string
   default = "trips_data_all"
 }
+
+# variable "TABLE_NAME" {
+#   description = "BigQuery Table"
+#   type = string
+#   default = "ny_taxi"
+# }

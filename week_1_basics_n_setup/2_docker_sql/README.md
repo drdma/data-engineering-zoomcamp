@@ -189,7 +189,9 @@ You can solve it with `.dockerignore`:
 Run the script with Docker
 
 ```bash
-URL="http://172.24.208.1:8000/yellow_tripdata_2021-01.csv"
+#  URL="http://172.24.208.1:8000/yellow_tripdata_2021-01.csv"
+
+URL="http://192.168.1.103:8000/yellow_tripdata_2021-01.csv"
 
 docker run -it \
   --network=pg-network \

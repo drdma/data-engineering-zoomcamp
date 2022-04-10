@@ -35,6 +35,7 @@ with DAG(
 ) as dag:
 
     for colour, ds_col in COLOUR_RANGE.items():
+        # https://airflow.apache.org/docs/apache-airflow-providers-google/stable/_api/airflow/providers/google/cloud/transfers/gcs_to_gcs/index.html
         move_files_gcs_task = GCSToGCSOperator(
             task_id=f'move_{colour}_{DATASET}_files_task',
             source_bucket=BUCKET,
